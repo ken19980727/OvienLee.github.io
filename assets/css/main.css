@@ -154,6 +154,7 @@ input, select, textarea {
 	h3 {
 		font-size: 1.75em;
 		line-height: 1.5em;
+		color: #2e4e7e;
 	}
 
 	h4 {
@@ -2677,7 +2678,7 @@ input, select, textarea {
 
 		.features article .inner {
 			display: inline-block;
-			vertical-align: middle;
+			vertical-align: top;
 			width: 50%;
 		}
 
