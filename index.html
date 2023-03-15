@@ -6,6 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/animation.css" />
     <style>
     .mySlides {
         display: none;
@@ -17,11 +18,19 @@
         -webkit-line-clamp: 3;
         overflow: hidden;
     }
+
     .sec3h5 {
         font-size: 1.1em;
-    line-height: 1.6em;
+        line-height: 1.6em;
     }
 
+    .p_last {
+    	margin-bottom: 0px;
+    	padding-bottom: 40px;
+    }
+    .h3_first {
+    	padding-top: 40px;
+    }
     </style>
 </head>
 
@@ -35,7 +44,7 @@
         </header>
         <nav id="nav">
             <ul>
-                <li><a href="#one" class="active">About</a></li>
+                <li><a href="#one" class="active">About Me</a></li>
                 <li><a href="#two">Things I Can Do</a></li>
                 <li><a href="#three">Experiments & Competition</a></li>
                 <!-- <li><a href="#four">Contact</a></li> -->
@@ -61,28 +70,29 @@
                     <img class="mySlides" src="images/landscape2.png" alt="" />
                     <img class="mySlides" src="images/landscape3.png" alt="" />
                 </div>
-                <div class="container">
-                    <header class="major">
-                        <!-- <h2>Read Only</h2> -->
-                        <p>AI Tech Enthusiast</p>
-                    </header>
-                    <p>I was born in New Taipei City, Taiwan, in July 1998. Received the B.S. degree in engineering from the Department of Electrical Engineering, National Kaohsiung University of Science and Technology (NKUST), Taiwan. With strong enthusiasm in Artificial Intelligence. Researched on interests include Electronic Health Records, Code-Switch Analysis, and De-Identification.</p>
-                    <p>Now working on ASUS dialogue system technology development department. Design and research the Auto Speech Recognition algorithm.</p>
+                <div class="typing-txt-block bg-animation">
+                    <div class="container">
+                        <h3 class="h3_first">About me</h3>
+                        <header class="major">
+                            <p>AI Tech Enthusiast</p>
+                        </header>
+                        <p>I was born in New Taipei City, Taiwan, in July 1998. Received the B.S. degree in engineering from the Department of Electrical Engineering, National Kaohsiung University of Science and Technology (NKUST), Taiwan. With strong enthusiasm in Artificial Intelligence. Researched on interests include Electronic Health Records, Code-Switch Analysis, and De-Identification.</p>
+                        <p class="p_last">Now working on ASUS dialogue system technology development department. Design and research the Auto Speech Recognition algorithm.</p>
+                    </div>
                 </div>
             </section>
             <!-- Two -->
             <section id="two">
                 <div class="container">
                     <h3>Things I Can Do</h3>
-                    <!--                     <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer lorem ipsum dolor sit amet.
-                    </p> -->
+                    <p>TBD</p>
                     <ul class="feature-icons">
                         <li class="icon solid fa-code">Writing Python、R、C# program</li>
                         <li class="icon solid fa-cubes">NLP ASR implementation</li>
                         <li class="icon solid fa-book">Researching literature on AI</li>
                         <li class="icon solid fa-coffee">Familiar with AI, ML frameworks</li>
                         <li class="icon solid fa-bolt">Lightning bolt</li>
-                        <li class="icon solid fa-users">Shadow clone technique</li>
+                        <li class="fa-face-grin-squint-tears">Using prompt AI</li>
                     </ul>
                 </div>
             </section>
@@ -142,6 +152,7 @@
         <script src="assets/js/breakpoints.min.js"></script>
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
+        <script src="https://kit.fontawesome.com/da922f09d2.js" crossorigin="anonymous"></script>
         <script>
         var myIndex = 0;
         carousel();
