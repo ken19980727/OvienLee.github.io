@@ -24,12 +24,18 @@
         line-height: 1.6em;
     }
 
-    .p_last {
-    	margin-bottom: 0px;
-    	padding-bottom: 40px;
+    .sec1_p_last {
+        margin-bottom: 0px;
+        padding-bottom: 40px;
+        color: #FFFFFF;
     }
+
+    .sec1_p_first {
+        color: #FFFFFF;
+    }
+
     .h3_first {
-    	padding-top: 40px;
+        padding-top: 40px;
     }
     </style>
 </head>
@@ -39,7 +45,13 @@
     <section id="header">
         <header>
             <span class="image avatar"><img src="images/pic_myself.png" alt="" /></span>
-            <h1 id="logo"><a href="#">Ovien Lee</a></h1>
+            <h1 class="ml1">
+                <span class="text-wrapper">
+                    <span class="line line1"></span>
+                    <span id="logo" class="letters">Ovien Lee</span>
+                    <span class="line line2"></span>
+                </span>
+            </h1>
             <p>Everything's just a damn process until we peace outta this world, ya dig?</p>
         </header>
         <nav id="nav">
@@ -72,12 +84,18 @@
                 </div>
                 <div class="typing-txt-block bg-animation">
                     <div class="container">
+                        
                         <h3 class="h3_first">About me</h3>
+                        <div class="ml10">
+                            <span class="text-wrapper2">
+                                <span class="letters2">Domino Dreams</span>
+                            </span>
+                        </div>
                         <header class="major">
                             <p>AI Tech Enthusiast</p>
                         </header>
-                        <p>I was born in New Taipei City, Taiwan, in July 1998. Received the B.S. degree in engineering from the Department of Electrical Engineering, National Kaohsiung University of Science and Technology (NKUST), Taiwan. With strong enthusiasm in Artificial Intelligence. Researched on interests include Electronic Health Records, Code-Switch Analysis, and De-Identification.</p>
-                        <p class="p_last">Now working on ASUS dialogue system technology development department. Design and research the Auto Speech Recognition algorithm.</p>
+                        <p class="sec1_p_first">I was born in New Taipei City, Taiwan, in July 1998. Received the B.S. degree in engineering from the Department of Electrical Engineering, National Kaohsiung University of Science and Technology (NKUST), Taiwan. With strong enthusiasm in Artificial Intelligence. Researched on interests include Electronic Health Records, Code-Switch Analysis, and De-Identification.</p>
+                        <p class="sec1_p_last">Now working on ASUS dialogue system technology development department. Design and research the Auto Speech Recognition algorithm.</p>
                     </div>
                 </div>
             </section>
@@ -153,6 +171,9 @@
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
         <script src="https://kit.fontawesome.com/da922f09d2.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+        <script src="assets/js/animation.js"></script>
+        <script src="assets/js/anima2.js"></script>
         <script>
         var myIndex = 0;
         carousel();
