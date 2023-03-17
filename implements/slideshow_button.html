@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Slideshow</title>
+  <style>
+    .slideshow {
+      max-width: 800px;
+      margin: auto;
+      position: relative;
+    }
+    
+    .slideshow img {
+      max-width: 100%;
+      height: auto;
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .slideshow button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: transparent;
+      border: none;
+      color: #fff;
+      font-size: 2rem;
+      cursor: pointer;
+      z-index: 1;
+    }
+
+    .slideshow button.prev {
+      left: 0;
+    }
+
+    .slideshow button.next {
+      right: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="slideshow">
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+    <img src="../images/pic01.jpg">
+    <img src="../images/pic02.jpg">
+    <img src="../images/pic03.jpg">
+    <img src="../images/pic03.jpg">
+    <img src="../images/pic02.jpg">
+    <img src="../images/pic01.jpg">
+    <img src="../images/pic02.jpg">
+    <img src="../images/pic03.jpg">
+    <img src="../images/pic01.jpg">
+  </div>
+
+  <script>
+    var images = document.querySelectorAll('.slideshow img');
+    var currentImage = 0;
+    var interval = setInterval(nextImage, 100);
+    var prevButton = document.querySelector('.slideshow button.prev');
+    var nextButton = document.querySelector('.slideshow button.next');
+
+    prevButton.addEventListener('click', prevImage);
+    nextButton.addEventListener('click', nextImage);
+
+    function prevImage() {
+      images[currentImage].style.display = 'none';
+      currentImage = (currentImage - 3 + images.length) % images.length;
+      images[currentImage].style.display = 'block';
+    }
+
+    function nextImage() {
+      images[currentImage].style.display = 'none';
+      currentImage = (currentImage + 3) % images.length;
+      images[currentImage].style.display = 'block';
+    }
+  </script>
+</body>
+</html>

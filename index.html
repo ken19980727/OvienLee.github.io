@@ -37,8 +37,27 @@
     .h3_first {
         padding-top: 40px;
     }
+
     .text_black {
         color: black;
+    }
+
+    .slideshow {
+        display: none;
+    }
+
+    /* 顯示當前的圖片 */
+    .slideshow.active {
+        display: block;
+    }
+
+    /* 按鈕樣式 */
+    .button {
+        display: inline-block;
+        padding: 10px;
+        border: none;
+        background-color: #ccc;
+        cursor: pointer;
     }
     </style>
 </head>
@@ -87,12 +106,11 @@
                 </div>
                 <div class="typing-txt-block bg-animation">
                     <div class="container">
-                        
                         <h3 class="h3_first">About me</h3>
                         <div class="ml10">
                             <span class="text-wrapper2">
                                 <header class="major">
-                                <span class="letters2 text_black">AI Tech Enthusiast</span>
+                                    <span class="letters2 text_black">AI Tech Enthusiast</span>
                                 </header>
                             </span>
                         </div>
@@ -124,35 +142,39 @@
                 <div class="container">
                     <h3>Experiments & Competition</h3>
                     <p>TBD</p>
-                    <div class="features">
-                        <article>
-                            <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
-                            <div style="top: 0px;" class="inner">
-                                <h5 class="sec3h5">經濟部工業局-AI 產業實戰應用人才淬煉計畫(AIGO)「利用情感語意分析建構商家網路評價機制」-佳作
-                                </h5>
-                                <p class="multiline-ellipsis">Establish an algorithm/system to filter malicious online reviews of merchants and design a brand-new rating mechanism that quantifies the score more accurately, thus enhancing the objectivity and reliability of the evaluations.</p>
-                            </div>
-                        </article>
+                    <div class="slideshow">
+                        <div class="features">
+                            <article>
+                                <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+                                <div style="top: 0px;" class="inner">
+                                    <h5 class="sec3h5">經濟部工業局-AI 產業實戰應用人才淬煉計畫(AIGO)「利用情感語意分析建構商家網路評價機制」-佳作
+                                    </h5>
+                                    <p class="multiline-ellipsis">Establish an algorithm/system to filter malicious online reviews of merchants and design a brand-new rating mechanism that quantifies the score more accurately, thus enhancing the objectivity and reliability of the evaluations.</p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="features">
+                            <article>
+                                <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+                                <div style="top: 0px;" class="inner">
+                                    <h5 class="sec3h5">經濟部工業局-AI 產業實戰應用人才淬煉計畫(AIGO)「利用情感語意分析建構商家網路評價機制」-佳作
+                                    </h5>
+                                    <p class="multiline-ellipsis">Establish an algorithm/system to filter malicious online reviews of merchants and design a brand-new rating mechanism that quantifies the score more accurately, thus enhancing the objectivity and reliability of the evaluations.</p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="features">
+                            <article>
+                                <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+                                <div style="top: 0px;" class="inner">
+                                    <h5 class="sec3h5">經濟部工業局-AI 產業實戰應用人才淬煉計畫(AIGO)</h5>
+                                    <p class="multiline-ellipsis">Establish an algorithm/system to filter malicious online reviews of merchants and design a brand-new rating mechanism that quantifies the score more accurately, thus enhancing the objectivity and reliability of the evaluations.</p>
+                                </div>
+                            </article>
+                        </div>
                     </div>
-                    <div class="features">
-                        <article>
-                            <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
-                            <div style="top: 0px;" class="inner">
-                                <h5 class="sec3h5">經濟部工業局-AI 產業實戰應用人才淬煉計畫(AIGO)「利用情感語意分析建構商家網路評價機制」-佳作
-                                </h5>
-                                <p class="multiline-ellipsis">Establish an algorithm/system to filter malicious online reviews of merchants and design a brand-new rating mechanism that quantifies the score more accurately, thus enhancing the objectivity and reliability of the evaluations.</p>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="features">
-                        <article>
-                            <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
-                            <div style="top: 0px;" class="inner">
-                                <h5 class="sec3h5">經濟部工業局-AI 產業實戰應用人才淬煉計畫(AIGO)</h5>
-                                <p class="multiline-ellipsis">Establish an algorithm/system to filter malicious online reviews of merchants and design a brand-new rating mechanism that quantifies the score more accurately, thus enhancing the objectivity and reliability of the evaluations.</p>
-                            </div>
-                        </article>
-                    </div>
+                    <button class="button" id="prevButton">Prev</button>
+                    <button class="button" id="nextButton">Next</button>
                 </div>
             </section>
             <!-- Four -->
@@ -193,6 +215,29 @@
             x[myIndex - 1].style.display = "block";
             setTimeout(carousel, 3000); // Change image every 2 seconds
         }
+
+        const images = document.querySelectorAll('.slideshow');
+        let index = 0;
+
+        // 顯示當前圖片
+        function showImage(index) {
+            // 隱藏所有圖片
+            images.forEach(image => image.classList.remove('active'));
+            // 顯示當前圖片
+            images[index].classList.add('active');
+        }
+
+        // 上一張圖片
+        document.querySelector('#prevButton').addEventListener('click', () => {
+            index = (index === 0) ? images.length - 1 : index - 1;
+            showImage(index);
+        });
+
+        // 下一張圖片
+        document.querySelector('#nextButton').addEventListener('click', () => {
+            index = (index + 1) % images.length;
+            showImage(index);
+        });
         </script>
 </body>
 
