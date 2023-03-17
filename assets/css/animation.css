@@ -115,17 +115,17 @@
 .ml10 {
   position: relative;
   font-weight: 900;
-  font-size: 4em;
+/*  font-size: 4em;*/
 }
 
-.ml10 .text-wrapper2 {
+/*.ml10 .text-wrapper2 {
   position: relative;
   display: inline-block;
   padding-top: 0.2em;
   padding-right: 0.05em;
   padding-bottom: 0.1em;
   overflow: hidden;
-}
+}*/
 
 .ml10 .letter2 {
   display: inline-block;
