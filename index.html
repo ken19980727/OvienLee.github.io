@@ -5,6 +5,7 @@
     <title>OvienLee View</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/animation.css" />
     <link rel="stylesheet" href="assets/css/tab.css" />
@@ -144,56 +145,50 @@
                     <h3>Experiments & Competition</h3>
                     <p>TBD</p>
                     <div class="tab_css">
-                        <input id="tab1" type="radio" name="tab" checked="checked" />
-                        <label for="tab1">頁籤 1</label>
+                        <input id="tab1" type="radio" name="tab" checked="checked"/>
+                        <label for="tab1">AIGO</label>
                         <div class="tab_content">
-                            <div class="features">
-                                <article>
+                            <div id="aigo" class="features">
+                                <article v-for='award in awards'>
                                     <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
                                     <div style="top: 0px;" class="inner">
-                                        <h5 class="sec3h5">經濟部工業局-AI 產業實戰應用人才淬煉計畫(AIGO)「利用情感語意分析建構商家網路評價機制」-佳作
-                                        </h5>
-                                        <p class="multiline-ellipsis">Establish an algorithm/system to filter malicious online reviews of merchants and design a brand-new rating mechanism that quantifies the score more accurately, thus enhancing the objectivity and reliability of the evaluations.</p>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="features">
-                                <article>
-                                    <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
-                                    <div style="top: 0px;" class="inner">
-                                        <h5 class="sec3h5">經濟部工業局-AI 產業實戰應用人才淬煉計畫(AIGO)「利用情感語意分析建構商家網路評價機制」-佳作
-                                        </h5>
-                                        <p class="multiline-ellipsis">Establish an algorithm/system to filter malicious online reviews of merchants and design a brand-new rating mechanism that quantifies the score more accurately, thus enhancing the objectivity and reliability of the evaluations.</p>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="features">
-                                <article>
-                                    <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
-                                    <div style="top: 0px;" class="inner">
-                                        <h5 class="sec3h5">經濟部工業局-AI 產業實戰應用人才淬煉計畫(AIGO)</h5>
-                                        <p class="multiline-ellipsis">Establish an algorithm/system to filter malicious online reviews of merchants and design a brand-new rating mechanism that quantifies the score more accurately, thus enhancing the objectivity and reliability of the evaluations.</p>
+                                        <h5 class="sec3h5">{{award.title}}</h5>
+                                        <p class="multiline-ellipsis">
+                                            <li v-for='simple_text in award.simple_text'>{{simple_text}}</li>
+                                        </p>
                                     </div>
                                 </article>
                             </div>
                         </div>
                         <input id="tab2" type="radio" name="tab" />
-                        <label for="tab2">頁籤 2</label>
+                        <label for="tab2">HACKATHON</label>
                         <div class="tab_content">
-                            第 2 個頁籤內容區塊<br />
-                            WFU BLOG | Blogger 調校資料庫<br />
-                            第 2 個頁籤內容區塊<br />
-                            WFU BLOG | Blogger 調校資料庫<br />
+                            <div id="hackathon" class="features">
+                                <article v-for='award in awards'>
+                                    <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+                                    <div style="top: 0px;" class="inner">
+                                        <h5 class="sec3h5">{{award.title}}</h5>
+                                        <p class="multiline-ellipsis">
+                                            <li v-for='simple_text in award.simple_text'>{{simple_text}}</li>
+                                        </p>
+                                    </div>
+                                </article>
+                            </div>
                         </div>
                         <input id="tab3" type="radio" name="tab" />
-                        <label for="tab3">頁籤 3</label>
+                        <label for="tab3">AICUP</label>
                         <div class="tab_content">
-                            第 3 個頁籤內容區塊<br />
-                            WFU BLOG | Blogger 調校資料庫<br />
-                            第 3 個頁籤內容區塊<br />
-                            WFU BLOG | Blogger 調校資料庫<br />
-                            第 3 個頁籤內容區塊<br />
-                            WFU BLOG | Blogger 調校資料庫<br />
+                            <div id="hackathon" class="features">
+                                <article v-for='award in awards'>
+                                    <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+                                    <div style="top: 0px;" class="inner">
+                                        <h5 class="sec3h5">{{award.title}}</h5>
+                                        <p class="multiline-ellipsis">
+                                            <li v-for='simple_text in award.simple_text'>{{simple_text}}</li>
+                                        </p>
+                                    </div>
+                                </article>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -261,6 +256,7 @@
         showImage(index);
     });
     </script>
+    
 </body>
 
 </html>

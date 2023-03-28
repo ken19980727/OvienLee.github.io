@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"> -->
+    </script>
+    <title>vue forloop dict</title>
+</head>
+
+<body>
+    <div id='parent'>
+        <h1 style="color: green">
+            GeeksforGeeks
+        </h1>
+        <h3>Courses Details!</h3>
+        <table>
+            <tr>
+                <th>Course Id</th>
+                <th>Course Name</th>
+                <th>Instructor</th>
+            </tr>
+            <tr v-for='Course in Courses'>
+                <td>{{Course.CourseId}}</td>
+                <td>{{Course.CourseName}}</td>
+                <td>{{Course.instructor}}</td>
+            </tr>
+        </table>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+    const parent = new Vue({
+        el: '#parent',
+        data: {
+            Courses: [{
+                    CourseId: '100A',
+                    CourseName: 'React.js',
+                    instructor: 'Stphen Grider'
+                },
+                {
+                    CourseId: '100B',
+                    CourseName: 'Vue.js',
+                    instructor: 'Maxmillian'
+                },
+                {
+                    CourseId: '100C',
+                    CourseName: 'Angular.js',
+                    instructor: 'Maxmillian'
+                },
+                {
+                    CourseId: '100D',
+                    CourseName: 'Java',
+                    instructor: 'Tim Buchikka'
+                },
+                {
+                    CourseId: '100E',
+                    CourseName: 'web Dev',
+                    instructor: 'Colt Stele'
+                }
+            ]
+        }
+    })
+    </script>
+</body>
+
+</html>
