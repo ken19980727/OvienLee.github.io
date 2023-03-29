@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>related position</title>
+    <style type="text/css">
+    .Product_block_hot {
+        position: relative;
+        text-align: center;
+        border: 2px solid black;
+    }
+
+    //hot紅色區塊
+    .Product_hot_icon {
+        position: absolute; 
+        font-weight: bold;
+        top: 0px;
+        right: 0px; //右邊上面都設0，則出現在右上方
+        color: white;
+        display: block;
+        background: red;
+        width: 40px;
+        height: 19px;
+        text-align: center;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="Product_block_hot">
+        <span class="Product_hot_icon">Hot</span>
+        <img src="product_1.png" alt="">
+    </div>
+</body>
+
+</html>
