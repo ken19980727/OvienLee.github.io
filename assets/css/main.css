@@ -2772,6 +2772,7 @@ input[type="button"]:disabled,
     border-top: solid 3px #f4f4f4;
     margin-bottom: 2.25em;
     padding-top: 2.25em;
+    position: relative;
 }
 
 .features article:first-child {
@@ -2795,6 +2796,7 @@ input[type="button"]:disabled,
     display: inline-block;
     vertical-align: top;
     width: 50%;
+    top: 0px;
 }
 
 .features article .inner> :last-child {
@@ -3465,4 +3467,14 @@ input[type="button"]:disabled,
         padding: 0;
     }
 
+}
+
+.square-date {
+    background: #fff1bf;
+    position: absolute;
+    color: black;
+    font-size: 12px;
+    margin: 0;
+    bottom: 0;
+    right: 25px;
 }
