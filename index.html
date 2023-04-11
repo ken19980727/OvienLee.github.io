@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/animation.css" />
     <link rel="stylesheet" href="assets/css/tab.css" />
+    <link rel="stylesheet" href="assets/css/img-effect.css" />
     <style>
         .mySlides {
         display: none;
@@ -150,7 +151,7 @@
                         <div class="tab_content">
                             <div id="aigo" class="features">
                                 <article v-for='award in awards'>
-                                    <a href="#" class="image"><img src="{{award.image}}" alt="" /></a>
+                                    <a href="#" class="image"><img src="{{award.image}}" class="img-card"/></a>
                                     <div class="inner">
                                         <h5 class="sec3h5">{{award.title}}</h5>
                                         <p>
@@ -166,7 +167,7 @@
                         <div class="tab_content">
                             <div id="hackathon" class="features">
                                 <article v-for='award in awards'>
-                                    <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+                                    <a href="#" class="image"><img src="images/pic01.jpg" class="img-card" /></a>
                                     <div class="inner">
                                         <h5 class="sec3h5">{{award.title}}</h5>
                                         <p class="multiline-ellipsis">

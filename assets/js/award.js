@@ -7,7 +7,7 @@ const sec3_1 = new Vue({
                 simple_text: ['全新商家評論的評分機制',
                               '提供一套可行 POC 方案，有效過濾濫充評論'],
                 date:'Dec 2022',
-                image : "images/awards/award_test.jpg"
+                image : "C://Users/ovien_lee/Desktop/VM246/OvienLee.github.io/images/awards/aborigines.jpg"
             },
             {
                 title: '經濟部工業局-AI 產業實戰應用人才淬煉計畫(AIGO)「原住民語音生成」-特優',
@@ -15,7 +15,7 @@ const sec3_1 = new Vue({
                 	           'Tacotron and Tacotron2 作為模型架構並比較' , 
                 	           'Log-Spectral Distance 小於 15'],
                 date:'Oct 2021',
-                image : "images/awards/aborigines.jpg"
+                image : "../../images/awards/award_test.jpg"
             },
         ]
     }
