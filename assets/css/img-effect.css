@@ -1,7 +1,7 @@
 .img-card {
     display: inline-block;
-    width: 250px;
-    height: 200px;
+/*    width: 250px;
+    height: 200px;*/
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
