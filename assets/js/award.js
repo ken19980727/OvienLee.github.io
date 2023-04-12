@@ -29,13 +29,15 @@ const sec3_2 = new Vue({
                 title: '法律法遵黑客松-法遵特別獎',
                 simple_text: ['以代理法遵完成案件法規多標籤分類',
                             '設計分層式注意力模型達到可解釋性 AI'],
-                date:'Aug 2021'
+                date:'Aug 2021',
+                image : "images/awards/aborigines.jpg"
             },
             {
                 title: '保險金融與AI智慧健康區塊鏈 黑客松競賽-佳作',
                 simple_text: ['以台北醫學大學提供之資料',
                             "開發一套ICU病床分配系統"],
-                date:'July 2019'
+                date:'July 2019',
+                image : "images/awards/aborigines.jpg"
             },
         ]
     }
@@ -51,14 +53,16 @@ const sec3_3 = new Vue({
                             '基於 Sentence piece RoBERta 作為模型結合 CRF 進行微調',
                             '使用正規表示法改善隱私欄位歧異現象',
                             ],
-                date:'Dec 2020'
+                date:'Dec 2020',
+                image : "images/awards/aborigines.jpg"
             },
             {
                 title: '人工智慧論文機器閱讀競賽之論文標註-前標 (Ranking : 33/531)',
                 simple_text: ['給定 Computer Science 相關的論文摘要，對每個句子進行分類(Background、Objectives、Methods、Results、Conclusions、Others)',
                             "同時使用 Glove & BERT 作為 word embedding",
                             "比較 GRU 與 LSTM 作為 neural networks 效能差異"],
-                date:'Dec 2019'
+                date:'Dec 2019',
+                image : "images/awards/aborigines.jpg"
             },
         ]
     }
@@ -73,17 +77,20 @@ const sec3_4 = new Vue({
                 simple_text: ['Python Online IDE 操作',
                             '資料分析與特徵工程',
                             '機器學習與類神經網路教學'],
-                date:'Apr 2022'
+                date:'Apr 2022',
+                image : "images/awards/aborigines.jpg"
             },
             {
                 title: 'Intel OpenVINO™ x Edge AI創意應用競賽-佳作',
                 simple_text: ['使用 OpenVINO toolkit 完成 Object Detection'],
-                date:'Nov 2019'
+                date:'Nov 2019',
+                image : "images/awards/aborigines.jpg"
             },
             {
                 title: '2018全國大專院校羽球比賽大電盃-冠軍',
                 simple_text: [''],
-                date:'Nov 2018'
+                date:'Nov 2018',
+                image : "images/awards/aborigines.jpg"
             },
         ]
     }
