@@ -69,7 +69,7 @@
     <!-- Header -->
     <section id="header">
         <header>
-            <span class="image avatar"><img src="images/pic_myself.png" alt="" /></span>
+            <span class="image avatar"><img src="images/pic_myself2.png" alt="" /></span>
             <h1 class="ml1">
                 <span class="text-wrapper">
                     <span class="line line1"></span>
@@ -113,7 +113,7 @@
                         <div class="ml10">
                             <span class="text-wrapper2">
                                 <header class="major">
-                                    <span class="letters2 text_black">AI Tech Enthusiast</span>
+                                    <span class="letters2 text_black">A front-runner for a job in the AI</span>
                                 </header>
                             </span>
                         </div>
@@ -144,14 +144,14 @@
             <section id="three">
                 <div class="container">
                     <h3>Experiments & Competition</h3>
-                    <p>TBD</p>
+                    <p class="text_black">I did it for me. I liked it. I was good at it. And I was ... really ... I was alive.</p>
                     <div class="tab_css">
                         <input id="tab1" type="radio" name="tab" checked="checked"/>
                         <label for="tab1">AIGO</label>
                         <div class="tab_content">
                             <div id="aigo" class="features">
                                 <article v-for='award in awards'>
-                                    <a href="#" class="image"><img src="images/awards/aborigines.jpg" class="img-card"/></a>
+                                    <a href="#" class="image"><img :src=award.image class="img-card"/></a>
                                     <div class="inner">
                                         <h5 class="sec3h5">{{award.title}}</h5>
                                         <p>
@@ -183,7 +183,7 @@
                         <div class="tab_content">
                             <div id="aicup" class="features">
                                 <article v-for='award in awards'>
-                                    <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+                                    <a href="#" class="image"><img src="images/pic01.jpg" class="img-card" /></a>
                                     <div class="inner">
                                         <h5 class="sec3h5">{{award.title}}</h5>
                                         <p class="multiline-ellipsis">
@@ -199,7 +199,7 @@
                         <div class="tab_content">
                             <div id="other" class="features">
                                 <article v-for='award in awards'>
-                                    <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+                                    <a href="#" class="image"><img src="images/pic01.jpg" class="img-card" /></a>
                                     <div class="inner">
                                         <h5 class="sec3h5">{{award.title}}</h5>
                                         <p class="multiline-ellipsis">
