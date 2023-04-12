@@ -84,6 +84,7 @@
                 <li><a href="#one" class="active">About Me</a></li>
                 <li><a href="#two">Things I Can Do</a></li>
                 <li><a href="#three">Experiments & Competition</a></li>
+                <li><a href="#four">Paper Publication</a></li>
                 <!-- <li><a href="#four">Contact</a></li> -->
             </ul>
         </nav>
@@ -146,12 +147,12 @@
                     <h3>Experiments & Competition</h3>
                     <p class="text_black">I did it for me. I liked it. I was good at it. And I was ... really ... I was alive.</p>
                     <div class="tab_css">
-                        <input id="tab1" type="radio" name="tab" checked="checked"/>
+                        <input id="tab1" type="radio" name="tab" checked="checked" />
                         <label for="tab1">AIGO</label>
                         <div class="tab_content">
                             <div id="aigo" class="features">
                                 <article v-for='award in awards'>
-                                    <a href="#" class="image"><img :src=award.image class="img-card"/></a>
+                                    <a href="#" class="image"><img :src=award.image class="img-card" /></a>
                                     <div class="inner">
                                         <h5 class="sec3h5">{{award.title}}</h5>
                                         <p>
@@ -167,7 +168,7 @@
                         <div class="tab_content">
                             <div id="hackathon" class="features">
                                 <article v-for='award in awards'>
-                                    <a href="#" class="image"><img src="images/pic01.jpg" class="img-card" /></a>
+                                    <a href="#" class="image"><img :src=award.image class="img-card" /></a>
                                     <div class="inner">
                                         <h5 class="sec3h5">{{award.title}}</h5>
                                         <p class="multiline-ellipsis">
@@ -183,7 +184,7 @@
                         <div class="tab_content">
                             <div id="aicup" class="features">
                                 <article v-for='award in awards'>
-                                    <a href="#" class="image"><img src="images/pic01.jpg" class="img-card" /></a>
+                                    <a href="#" class="image"><img :src=award.image class="img-card" /></a>
                                     <div class="inner">
                                         <h5 class="sec3h5">{{award.title}}</h5>
                                         <p class="multiline-ellipsis">
@@ -199,7 +200,7 @@
                         <div class="tab_content">
                             <div id="other" class="features">
                                 <article v-for='award in awards'>
-                                    <a href="#" class="image"><img src="images/pic01.jpg" class="img-card" /></a>
+                                    <a href="#" class="image"><img :src=award.image class="img-card" /></a>
                                     <div class="inner">
                                         <h5 class="sec3h5">{{award.title}}</h5>
                                         <p class="multiline-ellipsis">
@@ -212,8 +213,13 @@
                         </div>
                     </div>
                 </div>
+            </section>
         </div>
-        </section>
+        <section id="four">
+                <div class="container">
+                    <h3>Paper Publication</h3>
+                </div>
+            </section>
         <!-- Four -->
         <!-- Footer -->
         <!-- <section id="footer">
@@ -277,7 +283,6 @@
         showImage(index);
     });
     </script>
-    
 </body>
 
 </html>
