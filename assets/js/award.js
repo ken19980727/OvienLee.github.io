@@ -8,6 +8,7 @@ const sec3_1 = new Vue({
                               '提供一套可行 POC 方案，有效過濾濫充評論'],
                 date:'Dec 2022',
                 image : "images/awards/store_review.jpg"
+                link : "https://github.com/AI-FREE-Team/TTS-AIGO"
             },
             {
                 title: '經濟部工業局-AI 產業實戰應用人才淬煉計畫(AIGO)「原住民語音生成」-特優',
@@ -30,14 +31,14 @@ const sec3_2 = new Vue({
                 simple_text: ['以代理法遵完成案件法規多標籤分類',
                             '設計分層式注意力模型達到可解釋性 AI'],
                 date:'Aug 2021',
-                image : "images/awards/aborigines.jpg"
+                image : "images/awards/law_tech.jpg"
             },
             {
                 title: '保險金融與AI智慧健康區塊鏈 黑客松競賽-佳作',
                 simple_text: ['以台北醫學大學提供之資料',
                             "開發一套ICU病床分配系統"],
                 date:'July 2019',
-                image : "images/awards/aborigines.jpg"
+                image : "images/awards/medical_hackthon.jpg"
             },
         ]
     }
@@ -54,7 +55,7 @@ const sec3_3 = new Vue({
                             '使用正規表示法改善隱私欄位歧異現象',
                             ],
                 date:'Dec 2020',
-                image : "images/awards/aborigines.jpg"
+                image : "images/awards/medical_did.jpg"
             },
             {
                 title: '人工智慧論文機器閱讀競賽之論文標註-前標 (Ranking : 33/531)',
@@ -62,7 +63,7 @@ const sec3_3 = new Vue({
                             "同時使用 Glove & BERT 作為 word embedding",
                             "比較 GRU 與 LSTM 作為 neural networks 效能差異"],
                 date:'Dec 2019',
-                image : "images/awards/aborigines.jpg"
+                image : "images/awards/paper_anno.jpg"
             },
         ]
     }
@@ -78,19 +79,19 @@ const sec3_4 = new Vue({
                             '資料分析與特徵工程',
                             '機器學習與類神經網路教學'],
                 date:'Apr 2022',
-                image : "images/awards/aborigines.jpg"
+                image : "images/awards/hahow.jpg"
             },
             {
                 title: 'Intel OpenVINO™ x Edge AI創意應用競賽-佳作',
                 simple_text: ['使用 OpenVINO toolkit 完成 Object Detection'],
                 date:'Nov 2019',
-                image : "images/awards/aborigines.jpg"
+                image : "images/awards/openvino.jpg"
             },
             {
                 title: '2018全國大專院校羽球比賽大電盃-冠軍',
                 simple_text: [''],
                 date:'Nov 2018',
-                image : "images/awards/aborigines.jpg"
+                image : "images/awards/badminton.jpg"
             },
         ]
     }
