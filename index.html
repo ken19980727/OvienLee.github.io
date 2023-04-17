@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="assets/css/tab.css" />
     <link rel="stylesheet" href="assets/css/img-effect.css" />
     <style>
-        .mySlides {
+        @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+    .mySlides {
         display: none;
     }
 
@@ -214,12 +216,26 @@
                     </div>
                 </div>
             </section>
-        </div>
-        <section id="four">
+            <section id="four" class="paper_font">
                 <div class="container">
                     <h3>Paper Publication</h3>
+                    <div class="paper_border">
+                        <strong>Best First-Person Shooters</strong>
+                        <div id="journal">
+                        <ol class="alternating-colors"  v-for='paper in papers'>
+                            <li>
+                                <strong>{{paper.title}}</strong>
+                                <p>Comments : {{paper.comment}}</p>
+                                <p class="square-date">{{paper.date}}</p>
+                            </li>
+                        </ol>
+                        </div>
+                        <strong>Best First-Person Shooters</strong>
+
+                    </div>
                 </div>
             </section>
+        </div>
         <!-- Four -->
         <!-- Footer -->
         <!-- <section id="footer">
