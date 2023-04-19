@@ -112,16 +112,41 @@ const journal = new Vue({
                 date: 'Mar 2022',
             },
             {
-                title: 'Intel OpenVINO™ x Edge AI創意應用競賽-佳作',
-                simple_text: ['使用 OpenVINO toolkit 完成 Object Detection'],
-                date: 'Nov 2019',
-                image: "images/awards/openvino.jpg"
+                title: 'Cancer registry coding via hybrid neural symbolic systems in the cross-hospital setting',
+                comment: 'IEEE Access (SCI)',
+                date: 'July 2021',
             },
             {
-                title: '2018全國大專院校羽球比賽大電盃-冠軍',
-                simple_text: [''],
-                date: 'Nov 2018',
-                image: "images/awards/badminton.jpg"
+                title: 'Deep Learning-Based Natural Language Processing for Screening Psychiatric Patients',
+                comment: 'Front Psychiatry (SCI)',
+                date: 'Jan 2021',
+            },
+            {
+                title: 'Family history information extraction with neural attention and an enhanced relation-side scheme: algorithm development and validation',
+                comment: 'JMIR Medical Informatics (SCI)',
+                date: 'Dec 2020',
+            },
+        ]
+    }
+})
+
+const conference = new Vue({
+    el: '#conference',
+    data: {
+        papers: [{
+                title: '多語言模型於語碼混合資料上的效能探討以臺灣電子健康紀錄為例',
+                comment: '第二十屆離島資訊技術與應用研討會',
+                date: 'May 2022',
+            },
+            {
+                title: 'Data Augmentation for BERT in the Medication Extraction Task of BioCreative VII',
+                comment: 'Proceedings of the BioCreative VII Challenge Evaluation Workshop',
+                date: 'Nov 2021',
+            },
+            {
+                title: 'Deep Learning-Based Natural Language Processing for Screening Psychiatric Patients',
+                comment: 'MEDINFO 2021',
+                date: 'Oct 2021',
             },
         ]
     }

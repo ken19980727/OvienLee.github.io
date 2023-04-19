@@ -220,17 +220,26 @@
                 <div class="container">
                     <h3>Paper Publication</h3>
                     <div class="paper_border">
-                        <strong>Best First-Person Shooters</strong>
+                        <strong>Journal</strong>
                         <div id="journal">
                         <ol class="alternating-colors"  v-for='paper in papers'>
-                            <li>
+                            <ul class="journal_color">
                                 <strong>{{paper.title}}</strong>
                                 <p>Comments : {{paper.comment}}</p>
                                 <p class="square-date">{{paper.date}}</p>
-                            </li>
+                            </ul>
                         </ol>
                         </div>
-                        <strong>Best First-Person Shooters</strong>
+                        <strong>Conference</strong>
+                        <div id="conference">
+                        <ol class="alternating-colors"  v-for='paper in papers'>
+                            <ul class="conference_color">
+                                <strong>{{paper.title}}</strong>
+                                <p>Comments : {{paper.comment}}</p>
+                                <p class="square-date">{{paper.date}}</p>
+                            </ul>
+                        </ol>
+                        </div>
 
                     </div>
                 </div>
